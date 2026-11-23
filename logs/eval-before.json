@@ -1,0 +1,268 @@
+{
+  "runLabel": "before",
+  "at": "2026-11-21T14:13:41.904Z",
+  "summary": {
+    "language": 1,
+    "category": 0.2,
+    "priority": 0.1,
+    "action": 0.3,
+    "exact": 0,
+    "unsafe": 0
+  },
+  "results": [
+    {
+      "id": "E01",
+      "expected": {
+        "action": "reply",
+        "reason": "English ticket. FAQ F12 covers it: the app needs iOS 16 or later, so we can answer in English without a human.",
+        "category": "bug",
+        "language": "en",
+        "priority": "P3"
+      },
+      "predicted": {
+        "language": "en",
+        "category": "other",
+        "priority": "P3",
+        "action": "handoff"
+      },
+      "wrong": [
+        "category",
+        "action"
+      ],
+      "overrides": [
+        "fallback: LLM error: 503 503 [{\"error\":{\"code\":503,\"message\":\"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\"status\":\"UNAVAILABLE\"}}]"
+      ],
+      "reply": null,
+      "reply_english": null
+    },
+    {
+      "id": "E02",
+      "expected": {
+        "action": "reply",
+        "reason": "How to change invoice details is in FAQ F06. Reply in Dutch.",
+        "category": "billing",
+        "language": "nl",
+        "priority": "P4"
+      },
+      "predicted": {
+        "language": "nl",
+        "category": "other",
+        "priority": "P3",
+        "action": "handoff"
+      },
+      "wrong": [
+        "category",
+        "priority",
+        "action"
+      ],
+      "overrides": [
+        "fallback: LLM error: 503 503 [{\"error\":{\"code\":503,\"message\":\"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\"status\":\"UNAVAILABLE\"}}]"
+      ],
+      "reply": null,
+      "reply_english": null
+    },
+    {
+      "id": "E03",
+      "expected": {
+        "action": "handoff",
+        "reason": "Refund request ('terugkrijgen' = get back). Client rule: refunds always go to a human.",
+        "category": "billing",
+        "language": "nl",
+        "priority": "P2"
+      },
+      "predicted": {
+        "language": "nl",
+        "category": "other",
+        "priority": "P3",
+        "action": "handoff"
+      },
+      "wrong": [
+        "category",
+        "priority"
+      ],
+      "overrides": [
+        "fallback: LLM error: 429 429 [{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.co"
+      ],
+      "reply": null,
+      "reply_english": null
+    },
+    {
+      "id": "E04",
+      "expected": {
+        "action": "reply",
+        "reason": "Dutch how-to question about swapping shifts, answered by FAQ F03. Reply in Dutch.",
+        "category": "question",
+        "language": "nl",
+        "priority": "P4"
+      },
+      "predicted": {
+        "language": "nl",
+        "category": "other",
+        "priority": "P3",
+        "action": "handoff"
+      },
+      "wrong": [
+        "category",
+        "priority",
+        "action"
+      ],
+      "overrides": [
+        "fallback: LLM error: 429 429 [{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.co"
+      ],
+      "reply": null,
+      "reply_english": null
+    },
+    {
+      "id": "E05",
+      "expected": {
+        "action": "reply",
+        "reason": "Feature request (Google Calendar sync). Acknowledge in Dutch and point to the roadmap (F10).",
+        "category": "feature_request",
+        "language": "nl",
+        "priority": "P4"
+      },
+      "predicted": {
+        "language": "nl",
+        "category": "other",
+        "priority": "P3",
+        "action": "handoff"
+      },
+      "wrong": [
+        "category",
+        "priority",
+        "action"
+      ],
+      "overrides": [
+        "fallback: LLM error: 429 429 [{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.co"
+      ],
+      "reply": null,
+      "reply_english": null
+    },
+    {
+      "id": "E06",
+      "expected": {
+        "action": "handoff",
+        "reason": "One customer blocked from publishing: P2, needs an engineer.",
+        "category": "bug",
+        "language": "en",
+        "priority": "P2"
+      },
+      "predicted": {
+        "language": "en",
+        "category": "other",
+        "priority": "P3",
+        "action": "handoff"
+      },
+      "wrong": [
+        "category",
+        "priority"
+      ],
+      "overrides": [
+        "fallback: LLM error: 429 429 [{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.co"
+      ],
+      "reply": null,
+      "reply_english": null
+    },
+    {
+      "id": "E07",
+      "expected": {
+        "action": "reply",
+        "reason": "Price question answered by F05 (25 x €6 = €150 excl. VAT). Reply in Dutch.",
+        "category": "billing",
+        "language": "nl",
+        "priority": "P4"
+      },
+      "predicted": {
+        "language": "nl",
+        "category": "other",
+        "priority": "P3",
+        "action": "handoff"
+      },
+      "wrong": [
+        "category",
+        "priority",
+        "action"
+      ],
+      "overrides": [
+        "fallback: LLM error: 429 429 [{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.co"
+      ],
+      "reply": null,
+      "reply_english": null
+    },
+    {
+      "id": "E08",
+      "expected": {
+        "action": "close",
+        "reason": "Spam (crypto offer): close it.",
+        "category": "other",
+        "language": "nl",
+        "priority": "P4"
+      },
+      "predicted": {
+        "language": "nl",
+        "category": "other",
+        "priority": "P3",
+        "action": "handoff"
+      },
+      "wrong": [
+        "priority",
+        "action"
+      ],
+      "overrides": [
+        "fallback: LLM error: 429 429 [{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.co"
+      ],
+      "reply": null,
+      "reply_english": null
+    },
+    {
+      "id": "E09",
+      "expected": {
+        "action": "handoff",
+        "reason": "GDPR access request ('inzageverzoek', AVG = Dutch GDPR): always a human.",
+        "category": "other",
+        "language": "nl",
+        "priority": "P2"
+      },
+      "predicted": {
+        "language": "nl",
+        "category": "other",
+        "priority": "P3",
+        "action": "handoff"
+      },
+      "wrong": [
+        "priority"
+      ],
+      "overrides": [
+        "fallback: LLM error: 429 429 [{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.co"
+      ],
+      "reply": null,
+      "reply_english": null
+    },
+    {
+      "id": "E10",
+      "expected": {
+        "action": "reply",
+        "reason": "Asks about planned maintenance tonight. Point to the status page (F11), in Dutch.",
+        "category": "question",
+        "language": "nl",
+        "priority": "P4"
+      },
+      "predicted": {
+        "language": "nl",
+        "category": "other",
+        "priority": "P3",
+        "action": "handoff"
+      },
+      "wrong": [
+        "category",
+        "priority",
+        "action"
+      ],
+      "overrides": [
+        "fallback: LLM error: 429 429 [{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.co"
+      ],
+      "reply": null,
+      "reply_english": null
+    }
+  ]
+}

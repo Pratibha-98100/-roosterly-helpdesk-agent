@@ -1,0 +1,264 @@
+{
+  "runLabel": "cost",
+  "at": "2026-11-22T06:22:46.454Z",
+  "summary": {
+    "language": 1,
+    "category": 1,
+    "priority": 1,
+    "action": 1,
+    "exact": 1,
+    "unsafe": 0
+  },
+  "results": [
+    {
+      "id": "E01",
+      "expected": {
+        "action": "reply",
+        "reason": "English ticket. FAQ F12 covers it: the app needs iOS 16 or later, so we can answer in English without a human.",
+        "category": "bug",
+        "language": "en",
+        "priority": "P3"
+      },
+      "predicted": {
+        "language": "en",
+        "category": "bug",
+        "priority": "P3",
+        "action": "reply"
+      },
+      "wrong": [],
+      "overrides": [],
+      "reply": "Hi, thanks for reaching out. The Roosterly mobile app requires iOS 16 and later, which is why it is crashing on your iPhone 8 running iOS 15. Please update your device to a supported iOS version to use the app. Team Roosterly",
+      "reply_english": "Hi, thanks for reaching out. The Roosterly mobile app requires iOS 16 and later, which is why it is crashing on your iPhone 8 running iOS 15. Please update your device to a supported iOS version to use the app. Team Roosterly",
+      "tokens": {
+        "input": 2038,
+        "output": 277,
+        "calls": 1
+      }
+    },
+    {
+      "id": "E02",
+      "expected": {
+        "action": "reply",
+        "reason": "How to change invoice details is in FAQ F06. Reply in Dutch.",
+        "category": "billing",
+        "language": "nl",
+        "priority": "P4"
+      },
+      "predicted": {
+        "language": "nl",
+        "category": "billing",
+        "priority": "P4",
+        "action": "reply"
+      },
+      "wrong": [],
+      "overrides": [],
+      "reply": "Hi! Je kunt je btw-nummer voor toekomstige facturen zelf aanpassen onder Instellingen → Bedrijfsgegevens. Zo staat het direct goed op je volgende factuur. Groetjes, Team Roosterly",
+      "reply_english": "Hi! You can update your VAT number for future invoices yourself under Settings -> Company details. This way it will be correctly shown on your next invoice. Best regards, Team Roosterly",
+      "tokens": {
+        "input": 2040,
+        "output": 280,
+        "calls": 1
+      }
+    },
+    {
+      "id": "E03",
+      "expected": {
+        "action": "handoff",
+        "reason": "Refund request ('terugkrijgen' = get back). Client rule: refunds always go to a human.",
+        "category": "billing",
+        "language": "nl",
+        "priority": "P2"
+      },
+      "predicted": {
+        "language": "nl",
+        "category": "billing",
+        "priority": "P2",
+        "action": "handoff"
+      },
+      "wrong": [],
+      "overrides": [],
+      "reply": null,
+      "reply_english": null,
+      "tokens": {
+        "input": 2041,
+        "output": 148,
+        "calls": 1
+      }
+    },
+    {
+      "id": "E04",
+      "expected": {
+        "action": "reply",
+        "reason": "Dutch how-to question about swapping shifts, answered by FAQ F03. Reply in Dutch.",
+        "category": "question",
+        "language": "nl",
+        "priority": "P4"
+      },
+      "predicted": {
+        "language": "nl",
+        "category": "question",
+        "priority": "P4",
+        "action": "reply"
+      },
+      "wrong": [],
+      "overrides": [],
+      "reply": "Hoi! Open de dienst in de app en tik op \"Ruil aanbieden\". Collegae met dezelfde rol kunnen de ruil accepteren, waarna de manager dit goedkeurt onder Rooster → Verzoeken. Groet, Team Roosterly",
+      "reply_english": "Hi! Open the shift in the app and tap \"Ruil aanbieden\". Colleagues with the same role can accept the swap, after which the manager approves it under Rooster → Verzoeken. Regards, Team Roosterly",
+      "tokens": {
+        "input": 2029,
+        "output": 323,
+        "calls": 1
+      }
+    },
+    {
+      "id": "E05",
+      "expected": {
+        "action": "reply",
+        "reason": "Feature request (Google Calendar sync). Acknowledge in Dutch and point to the roadmap (F10).",
+        "category": "feature_request",
+        "language": "nl",
+        "priority": "P4"
+      },
+      "predicted": {
+        "language": "nl",
+        "category": "feature_request",
+        "priority": "P4",
+        "action": "reply"
+      },
+      "wrong": [],
+      "overrides": [],
+      "reply": "Bedankt voor je idee! We lezen elk idee en feature requests worden geplaatst op onze publieke roadmap op roadmap.roosterly.nl, waar je op ideeën kunt stemmen. We kunnen helaas geen leverdatum beloven voor individuele verzoeken.\n\nTeam Roosterly",
+      "reply_english": "Thanks for your idea! We read every idea and feature requests go on our public roadmap at roadmap.roosterly.nl, where you can vote on ideas. Unfortunately, we cannot promise a delivery date for individual requests.\n\nTeam Roosterly",
+      "tokens": {
+        "input": 2031,
+        "output": 289,
+        "calls": 1
+      }
+    },
+    {
+      "id": "E06",
+      "expected": {
+        "action": "handoff",
+        "reason": "One customer blocked from publishing: P2, needs an engineer.",
+        "category": "bug",
+        "language": "en",
+        "priority": "P2"
+      },
+      "predicted": {
+        "language": "en",
+        "category": "bug",
+        "priority": "P2",
+        "action": "handoff"
+      },
+      "wrong": [],
+      "overrides": [],
+      "reply": null,
+      "reply_english": null,
+      "tokens": {
+        "input": 2043,
+        "output": 171,
+        "calls": 1
+      }
+    },
+    {
+      "id": "E07",
+      "expected": {
+        "action": "reply",
+        "reason": "Price question answered by F05 (25 x €6 = €150 excl. VAT). Reply in Dutch.",
+        "category": "billing",
+        "language": "nl",
+        "priority": "P4"
+      },
+      "predicted": {
+        "language": "nl",
+        "category": "billing",
+        "priority": "P4",
+        "action": "reply"
+      },
+      "wrong": [],
+      "overrides": [],
+      "reply": "Hoi,\n\nHet Plus-abonnement kost €6 per actieve medewerker per maand, exclusief btw. Voor 25 medewerkers komt dit neer op €150 per maand, exclusief btw.\n\nTeam Roosterly",
+      "reply_english": "Hi,\n\nThe Plus plan costs €6 per active employee per month, excluding VAT. For 25 employees, this comes to €150 per month, excluding VAT.\n\nTeam Roosterly",
+      "tokens": {
+        "input": 2030,
+        "output": 278,
+        "calls": 1
+      }
+    },
+    {
+      "id": "E08",
+      "expected": {
+        "action": "close",
+        "reason": "Spam (crypto offer): close it.",
+        "category": "other",
+        "language": "nl",
+        "priority": "P4"
+      },
+      "predicted": {
+        "language": "nl",
+        "category": "other",
+        "priority": "P4",
+        "action": "close"
+      },
+      "wrong": [],
+      "overrides": [],
+      "reply": null,
+      "reply_english": null,
+      "tokens": {
+        "input": 2035,
+        "output": 145,
+        "calls": 1
+      }
+    },
+    {
+      "id": "E09",
+      "expected": {
+        "action": "handoff",
+        "reason": "GDPR access request ('inzageverzoek', AVG = Dutch GDPR): always a human.",
+        "category": "other",
+        "language": "nl",
+        "priority": "P2"
+      },
+      "predicted": {
+        "language": "nl",
+        "category": "other",
+        "priority": "P2",
+        "action": "handoff"
+      },
+      "wrong": [],
+      "overrides": [],
+      "reply": null,
+      "reply_english": null,
+      "tokens": {
+        "input": 2040,
+        "output": 193,
+        "calls": 1
+      }
+    },
+    {
+      "id": "E10",
+      "expected": {
+        "action": "reply",
+        "reason": "Asks about planned maintenance tonight. Point to the status page (F11), in Dutch.",
+        "category": "question",
+        "language": "nl",
+        "priority": "P4"
+      },
+      "predicted": {
+        "language": "nl",
+        "category": "question",
+        "priority": "P4",
+        "action": "reply"
+      },
+      "wrong": [],
+      "overrides": [],
+      "reply": "Je kunt de huidige storingen en het geplande onderhoud altijd bekijken op status.roosterly.nl.\n\nGroeten,\nTeam Roosterly",
+      "reply_english": "You can always check current outages and planned maintenance at status.roosterly.nl.\n\nBest regards,\nTeam Roosterly",
+      "tokens": {
+        "input": 2027,
+        "output": 236,
+        "calls": 1
+      }
+    }
+  ]
+}
